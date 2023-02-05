@@ -93,8 +93,8 @@ def test_exceptions():
 ```
 
 # Solution
+<img width="700" alt="Screen Shot 2023-02-05 at 5 37 37 PM" src="https://user-images.githubusercontent.com/116609563/216809571-7537a11f-5b4f-4636-9d25-587cc4dbd3b8.png">
 
-<img width="1306" alt="Screen Shot 2023-02-05 at 5 17 06 PM" src="https://user-images.githubusercontent.com/116609563/216809296-460de4b0-a8eb-4617-bedb-a8b239b6366d.png">
 
 
 
