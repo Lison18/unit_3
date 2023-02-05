@@ -17,7 +17,7 @@ def mystery(list1, list2)->str:
     return output
  ```
  
- ## kv file
+ ## Python file 2
  
  ```.py
  from quiz33 import mystery
