@@ -4,7 +4,7 @@ Create a Currency Converter GUI that takes an integer representing an amount fro
 
 # Solution
 ## Code
-
+```.py
 from kivymd.app import MDApp
 
 
@@ -32,6 +32,7 @@ class task1(MDApp):
             self.root.ids.conversion.text = f"{int(amount)} EUR is {round((int(amount) * 141.29),2)} Yen"
 
 task1().run()
+```
 
 ## Proof of work
 
