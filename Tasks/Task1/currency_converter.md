@@ -35,8 +35,19 @@ task1().run()
 ```
 
 ## Proof of work
+### Screenshot
 
 <img width="792" alt="Screen Shot 2023-01-31 at 12 08 42 PM" src="https://user-images.githubusercontent.com/116609563/215654024-d60004fb-e604-433b-b4e8-51c5a8cd4030.png">
+
+### Video
+
+
+
+
+https://user-images.githubusercontent.com/116609563/216876750-a8e3c9e2-f32b-4ea3-87d4-053823d9b21a.mov
+
+
+
 
 
 
