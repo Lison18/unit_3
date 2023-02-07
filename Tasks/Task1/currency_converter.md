@@ -85,7 +85,7 @@ Screen:
         font_style: "H5"
         pos_hint: {'center_y': .2}
         halign: "center"
-
+```
 
 
 ## Proof of work
