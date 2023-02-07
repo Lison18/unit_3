@@ -4,6 +4,7 @@ Create a Currency Converter GUI that takes an integer representing an amount fro
 
 # Solution
 ## Code
+### Python file
 ```.py
 from kivymd.app import MDApp
 
@@ -33,6 +34,8 @@ class task1(MDApp):
 
 task1().run()
 ```
+### Kv file 
+
 
 ## Proof of work
 ### Screenshot
