@@ -36,6 +36,57 @@ task1().run()
 ```
 ### Kv file 
 
+```.kv
+Screen:
+    size: 500,500
+
+    MDLabel:
+        text: "Currency Converter"
+        font_style: "H5"
+        pos_hint: {'center_y': .75}
+        halign: "center"
+
+    MDTextField:
+        id: user_input
+        hint_text: "Enter an amount in EUR"
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        halign: "center"
+        size_hint_x: .75
+        mode: 'rectangle'
+        text_color_focus: "black"
+        line_color_normal: "#000000"
+        hint_text_color_normal: "#000000"
+
+
+    MDLabel:
+        text: "Click to convert"
+        pos_hint: {"center_x": .625, 'center_y':.4}
+        font_style: "H6"
+
+    MDChip:
+        text: "$"
+        pos_hint: {"center_x": .725, "center_y": .4}
+        md_bg_color: "000000"
+        text_color: "#FFFFFF"
+        mode: "rectangle"
+        on_press: app.converter_dollar()
+
+    MDChip:
+        text: "¥"
+        pos_hint: {"center_x": .800, "center_y": .4}
+        md_bg_color: "#D62828"
+        text_color: "#FFFFFF"
+        mode: "rectangle"
+        on_press: app.converter_yen()
+
+    MDLabel:
+        id: conversion
+        text: ""
+        font_style: "H5"
+        pos_hint: {'center_y': .2}
+        halign: "center"
+
+
 
 ## Proof of work
 ### Screenshot
