@@ -4,7 +4,7 @@
 
 ## Problem definition
 
-The client wants a software to record his new IB grades each quarter. Verlon wants to be aware of his progresses and demand to know which grades are bellow the average by having a reminder. Furthermore, he will be able to know which subjetcs he has to work the most in order to reach his best score to go to his dream university in the United States.To achive this dream, he will have to improve his results by increasing his study organization thanks to a schedule of all the tasks that has to be done. For that, he wants to be abke to brainstorm by using some quick notes as reminders. Thanks to this software, Verlon will be updated if he is on track on all of his subjects or not. 
+The client called Verlon wants an aplication to record his new IB grades each quarter. Verlon wants to be aware of his progresses and demand to know which grades are bellow the average by having a reminder. Furthermore, he will be able to know which subjetcs he has to work the most in order to reach his best score to go to his dream university in the United States.To achive this dream, he will have to improve his results by increasing his study organization thanks to a schedule of all the tasks that has to be done. For that, he wants to be abke to brainstorm by using some quick notes as reminders. Thanks to this aplication, Verlon will be updated if he is on track on all of his subjects or not. 
 
 ## Proposed Solution
  
