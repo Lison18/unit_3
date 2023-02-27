@@ -21,12 +21,12 @@ The client called Verlon wants an aplication to record his new IB grades each qu
 ## Success Criteria
 
 
-1- The application has to have a login system demanding the username, email and password in order to sign up
-2- allow the user to input all his grades in IB
-3- system will find the grades bellow the average and 
-4- put an alarm message when the grade is very low and a positive one when the grade is high 
-5- show a motivating quote each time the customer opens the application
-6- To calculate the average for each subjects and the total of points.
+1. The application has to have a login system demanding the username, email and password in order to sign up
+2. allow the user to input all his grades in IB
+3. system will find the grades bellow the average and 
+4. put an alarm message when the grade is very low and a positive one when the grade is high 
+5. show a motivating quote each time the customer opens the application
+6. To calculate the average for each subjects and the total of points.
 
 # Criteria B: Design
 
