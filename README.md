@@ -20,13 +20,13 @@ The client called Verlon wants an aplication to record his new IB grades each qu
 [^7]: Real Python. “Python vs C++: Selecting the Right Tool for the Job.” Real Python, Real Python, 19 June 2021, https://realpython.com/python-vs-cpp/#memory-management. 
 ## Success Criteria
 
-1. The solution provides a visual representation of the Humidity and Temperature values inside a dormitory (Local) and outside the house (Remote) for a period of minimum 48 hours. 
-1. ```[HL]``` The local variables will be measure using a set of 4 sensors around the dormitory.
-2. The solution provides a mathematical modelling for the Humidity and Temperature levels for each Local and Remote locations. ```(SL: linear model)```, ```(HL: non-lineal model)```
-3. The solution provides a comparative analysis for the Humidity and Temperature levels for each Local and Remote locations including mean, standad deviation, minimum, maximum, and median.
-4. ```(SL)```The Local samples are stored in a csv file and ```(HL)``` posted to the remote server.
-5. Create a prediction the subsequent 12 hours for both temperature and humidity.
-6. A poster summarizing the visual representations, model and analysis is created. The poster includes a recommendation about healthy levels for Temperature and Humidity.
+
+1- The application has to have a login system demanding the username, email and password in order to sign up
+2- allow the user to input all his grades in IB
+3- system will find the grades bellow the average and 
+4- put an alarm message when the grade is very low and a positive one when the grade is high 
+5- show a motivating quote each time the customer opens the application
+6- To calculate the average for each subjects and the total of points.
 
 # Criteria B: Design
 
