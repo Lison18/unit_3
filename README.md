@@ -11,7 +11,9 @@ However, sometimes he is feeling very demotivated because of his school academic
 
 ### Design Statement
 
-To solve Verlon motivation problem and to inform him of hi progress, 
+To address the client's requirements, a customized application can be developed utilizing the Python programming language and the Kivy MD library for user interface design. Python was selected due to the facility of use, extensive community support, and rich library collection, as well as its cross-platform compatibility. Kivy MD was chosen for its material design aesthetic, which enhances usability and intuitiveness for employees.
+
+Regarding rental transaction data, SQL is an ideal choice for its robust and adaptable database management capabilities. Its ability to handle large amounts of data, safeguard it with security features, and accommodate concurrent users makes it well-suited for this application. SQL is truly impressive in its capabilities. By leveraging SQL to store grades information, client can input the grades and view averages.
 
 
 ## Success Criteria
