@@ -4,9 +4,13 @@
 
 ## Problem definition
 
-The client called Verlon wants an aplication to record his new IB grades each quarter. Verlon wants to be aware of his progresses and demand to know which grades are bellow the average by having a reminder. Furthermore, he will be able to know which subjetcs he has to work the most in order to reach his best score to go to his dream university in the United States.To achive this dream, he will have to improve his results by increasing his study organization thanks to a schedule of all the tasks that has to be done. For that, he wants to be abke to brainstorm by using some quick notes as reminders. Thanks to this aplication, Verlon will be updated if he is on track on all of his subjects or not. 
+Verlon Taisei Sakaguchi studies in UWC Isak Japan and wants to be updated of his school progress. He is asking for an aplication which records his new IB grades. Indeed, his objectif is to get a perfect score to get into his dream university in the United States. To achive this goal, he has to improve his grades by focusing more on the subjects that he is struggling with. Moreover, Verlon wants to know how much he has to study for each subjects
+However, sometimes he is feeling very demotivated because of his school academic pressure and the lack of sleep. But he wants to always remember that every challenges that he is facing are at the end always going to make him stronger and that he has to move on by doing his best.
 
 ## Proposed Solution
+
+### Design Statement
+
  
 
 **Design statement**
