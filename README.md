@@ -43,7 +43,7 @@ Some of the advantages of using SQL include:
 
 
 1. The application has to provide a login system demanding the username and password in order to login and sign up
-2. The application has to allow the user to input and delate all his grades in IB
+2. The application has to allow the user to input all his grades in IB
 3. The application has to provide a system which calculate the average score of the client 
 4. The application has to provide an alarm message when the grade is very low (below 4) and a positive one when the grade is high (higher than 5)
 5. The application has to show a motivating quote each time the customer sign up 
