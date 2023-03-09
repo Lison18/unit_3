@@ -42,7 +42,7 @@ Some of the advantages of using SQL include:
 ## Success Criteria
 
 
-1. The application has to provide a login system demanding the username, email and password in order to login and sign up
+1. The application has to provide a login system demanding the username and password in order to login and sign up
 2. The application has to allow the user to input and delate all his grades in IB
 3. The application has to provide a system which calculate the average score of the client 
 4. The application has to provide an alarm message when the grade is very low (below 4) and a positive one when the grade is high (higher than 5)
