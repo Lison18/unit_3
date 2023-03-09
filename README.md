@@ -60,8 +60,10 @@ Figure 1- Represents the system diagram for the application. The development of 
 ## ER Diagram
 <img width="1046" alt="Screen Shot 2023-03-09 at 10 25 49 AM" src="https://user-images.githubusercontent.com/116609563/223891389-1f2f7b77-2de1-4a1b-bfce-14d62ea9fa1f.png">
 
+Figure6- Represents the ER diagram for the database to store the data for the application. The database for the project has two tables, one for "user" and an other for "grade". The first one on the left side consists of being able to log in and sign up with the costumer ID: username, password and email. 
+The second one on the right side is for the customer to be able to store his grades and subjects asigned to the ID
 
-
+## UML Diagram
 
 
 
