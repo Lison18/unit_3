@@ -57,6 +57,13 @@ Some of the advantages of using SQL include:
 
 Figure 1- Represents the system diagram for the application. The development of the program is achieved through the use of Pycharm and the KivyMD library. Data are stored in the databas "project3.db", while the data come from the SQLite database engine. The arrows indicate the data transfer between the various components of the application.
 
+## ER Diagram
+<img width="1046" alt="Screen Shot 2023-03-09 at 10 25 49 AM" src="https://user-images.githubusercontent.com/116609563/223891389-1f2f7b77-2de1-4a1b-bfce-14d62ea9fa1f.png">
+
+
+
+
+
 
 **Fig.1** shows the system diagram for the proposed solution (**SL**).
 ## Record of Tasks
