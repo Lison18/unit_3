@@ -78,9 +78,34 @@ Furthermore, the database_worker class present in the diagram provides methods t
 Figure 4- Represents all the screens that are in the application inculding the login screen, the signup screen, the menu, the today's quote screen (the quote is saved, and the grade table where you can get the average. It is showing how the screens are organized and what buttons are clicked on to make a certain screen appears thanks to the arrows. 
 
 ## Record of Tasks
-| Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
-|---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Write the Problem context                        | 10min         | Nov 22                 | A         |
+| task no | Planned action                                         | Planned outcome | Time estimate | Target completion | Criterion |
+|---------|--------------------------------------------------------|-----------------|---------------|-------------------|-----------|
+| 1       | Write the problem context                              | Feb 2           | 10min         | feb5              | A         |
+| 2       | meeting with my client                                 | feb 5           | 20min         | feb 5             | A         |
+| 3       | write the success criterions                           | feb10           | 10min         | feb10             | A         |
+| 4       | draw the flow chart                                    | feb 12          | 30min         | feb12             | B         |
+| 5       | create the python file                                 | feb 15          | 2min          | feb15             | C         |
+| 5       | create the kv file                                     | feb 15          | 2min          | feb15             | C         |
+| 6       | import Dr Ruben's login code to the python file        | feb 16          | 3min          | feb16             | c         |
+| 7       | Creation of the kv file for the login system           | feb17           | 20min         | feb17             | c         |
+| 8       | modification if the login code                         | feb20           | 20min         | feb25             | c         |
+| 9       | creation of the class login                            | feb21           | 15min         | feb21             | c         |
+| 10      | creation of the sign up login                          | feb21           | 20min         | feb21             | C         |
+| 11      | kv code for the sign up screen                         | feb21           | 20min         | feb21             | c         |
+| 12      | creation of the IntroScreen class                      | feb24           | 30min         | feb 21            | C         |
+| 13      | kv code for the Introscreen                            | feb24           | 30min         | feb 21            | c         |
+| 14      | creation of the  IntroScreen                           | feb25           | 40min         | feb 25            | C         |
+| 15      | creation of the menu class                             | feb25           | 40min         | feb25             | C         |
+| 16      | kv code for the Table screen                           | feb26           | 40min         | feb26             | C         |
+| 17      | creation of the table screen                           | feb26           | 40min         | feb26             | C         |
+| 18      | make the code prettier                                 | feb28           | 2h            | feb30             | D         |
+| 19      | make the interface prettier                            | Mar 1           | 2h            | Mar9              | D         |
+| 20      | draw the UML diagram                                   | mar3            | 40min         | mar3              | B         |
+| 21      | draw the ER Diagram                                    | mar5            | 30min         | mar5              | B         |
+| 22      | draw the wirefare diagram                              | mar7            | 30min         | mar7              | B         |
+| 22      | draw the first flow diagram to login                   | mar8            | 20min         | mar8              | B         |
+| 23      | comment the most important parts of the code on github | mar9            | 1h            | mar10             | B         |
+| 24      | uploade the most importante piece of code on github    | mar 10          | 20min         | mar10             | C         |
 
 ## Test Plan
 
