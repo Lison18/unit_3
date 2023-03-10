@@ -60,14 +60,14 @@ Figure 1- Represents the system diagram for the application. The development of 
 ## ER Diagram
 <img width="1046" alt="Screen Shot 2023-03-09 at 10 25 49 AM" src="https://user-images.githubusercontent.com/116609563/223891389-1f2f7b77-2de1-4a1b-bfce-14d62ea9fa1f.png">
 
-Figure6- Represents the ER diagram for the database to store the data for the application. The database for the project has two tables, one for "user" and an other for "grade". The first one on the left side consists of being able to log in and sign up with the costumer ID: username, password and email. 
+Figure 2- Represents the ER diagram for the database to store the data for the application. The database for the project has two tables, one for "user" and an other for "grade". The first one on the left side consists of being able to log in and sign up with the costumer ID: username, password and email. 
 
 The second one on the right side is for the customer to be able to store his grades and subjects asigned to the ID
 
 ## UML Diagram
 <img width="595" alt="Screen Shot 2023-03-10 at 9 46 05 AM" src="https://user-images.githubusercontent.com/116609563/224194991-98eb7bf7-3098-4bdb-b6b2-0c39f753c17a.png">
 
-The diagram illustrates the UML representation of the application's classes and methods employed during its development. Two primary parent classes, namely MDApp and MDScreen, are displayed in the diagram. The subclasses derive their attributes and methods from these parent classes.
+Figure 3 - The diagram illustrates the UML representation of the application's classes and methods employed during its development. Two primary parent classes, namely MDApp and MDScreen, are displayed in the diagram. The subclasses derive their attributes and methods from these parent classes.
 
 Furthermore, the database_worker class present in the diagram provides methods to connect with SQLite3 database, search and retrieve information from it, store data into it, and terminate the connection with the database.
 
@@ -75,9 +75,8 @@ Furthermore, the database_worker class present in the diagram provides methods t
 
 <img width="537" alt="Screen Shot 2023-03-10 at 11 22 28 AM" src="https://user-images.githubusercontent.com/116609563/224207300-42ee748c-de8e-45f3-9bd2-eb843c3e4d9c.png">
 
+Figure 4- Represents all the screens that are in the application inculding the login screen, the signup screen, the menu, the today's quote screen (the quote is saved, and the grade table where you can get the average. It is showing how the screens are organized and what buttons are clicked on to make a certain screen appears thanks to the arrows. 
 
-
-**Fig.1** shows the system diagram for the proposed solution (**SL**).
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
