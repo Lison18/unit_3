@@ -44,8 +44,8 @@ Some of the advantages of using SQL include:
 
 1. The application has to provide a login system demanding the username and password in order to login and sign up
 2. The application has to allow the user to input all his grades in IB
-3. The application has to provide a system which calculate the average score of the client 
-4. The application has to provide an alarm message when the grade is very low (below 4) and a positive one when the grade is high (higher than 5)
+3. The application has to provide a function which calculates the average score of the client 
+4. The application has log out
 5. The application has to show a motivating quote each time the customer sign up 
 6. The application has to provide a space for the client to write his positive note of the day
 
@@ -70,6 +70,11 @@ The second one on the right side is for the customer to be able to store his gra
 The diagram illustrates the UML representation of the application's classes and methods employed during its development. Two primary parent classes, namely MDApp and MDScreen, are displayed in the diagram. The subclasses derive their attributes and methods from these parent classes.
 
 Furthermore, the database_worker class present in the diagram provides methods to connect with SQLite3 database, search and retrieve information from it, store data into it, and terminate the connection with the database.
+
+## Wireframe diagram
+
+<img width="537" alt="Screen Shot 2023-03-10 at 11 22 28 AM" src="https://user-images.githubusercontent.com/116609563/224207300-42ee748c-de8e-45f3-9bd2-eb843c3e4d9c.png">
+
 
 
 **Fig.1** shows the system diagram for the proposed solution (**SL**).
