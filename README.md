@@ -65,7 +65,11 @@ Figure6- Represents the ER diagram for the database to store the data for the ap
 The second one on the right side is for the customer to be able to store his grades and subjects asigned to the ID
 
 ## UML Diagram
+<img width="595" alt="Screen Shot 2023-03-10 at 9 46 05 AM" src="https://user-images.githubusercontent.com/116609563/224194991-98eb7bf7-3098-4bdb-b6b2-0c39f753c17a.png">
 
+The diagram illustrates the UML representation of the application's classes and methods employed during its development. Two primary parent classes, namely MDApp and MDScreen, are displayed in the diagram. The subclasses derive their attributes and methods from these parent classes.
+
+Furthermore, the database_worker class present in the diagram provides methods to connect with SQLite3 database, search and retrieve information from it, store data into it, and terminate the connection with the database.
 
 
 **Fig.1** shows the system diagram for the proposed solution (**SL**).
