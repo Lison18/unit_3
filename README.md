@@ -77,6 +77,25 @@ Furthermore, the database_worker class present in the diagram provides methods t
 
 Figure 4- Represents all the screens that are in the application inculding the login screen, the signup screen, the menu, the today's quote screen (the quote is saved, and the grade table where you can get the average. It is showing how the screens are organized and what buttons are clicked on to make a certain screen appears thanks to the arrows. 
 
+## Flow diagrams
+
+### Flow diagram for try_login method in class LoginScreen:
+
+<img width="299" alt="Screen Shot 2023-03-10 at 8 25 10 PM" src="https://user-images.githubusercontent.com/116609563/224304511-66dde73c-c1ed-4832-97b6-de291656955f.png">
+
+Figure 5- The LoginScreen class utilizes the try_login method to verify the user's login details. Upon receiving the user's email and password, the method retrieves the hashed password from the "users" table in the database through the use of the get_password_from_email() function from the database_handler_login_signup class. The try_login method plays a pivotal role in the LoginScreen class as it guarantees that only legitimate users are able to access the application's functionalities.
+
+### Flow diagram for get_average method in class TableScreen:
+
+<img width="202" alt="Screen Shot 2023-03-10 at 5 18 39 PM" src="https://user-images.githubusercontent.com/116609563/224304535-30216efb-9cad-495c-aa03-06b3b64a8ede.png">
+
+Figure 5- This diagram represents the code which calculates the average grade of students stored in a SQLite database called "project3.db". It retrieves all grades from the "grades" table using an SQL query, and then calculates the average grade by adding up all grades and dividing by the total number of grades. The result is displayed in a dialog box using the MDDialog class from the KivyMD library and is also printed to the console. If no grades are found in the database, a message is printed to the console. 
+
+### Flow diagram for try_register in SignupScreen:
+<img width="353" alt="Screen Shot 2023-03-10 at 9 04 43 PM" src="https://user-images.githubusercontent.com/116609563/224311894-f4f0ad5a-0672-4f8d-9547-c5550399701b.png">
+
+Figure 6- This code creates a method called try_register which registers a new user into the application by retrieving input from the username, email, password, and confirm password fields. If the password and confirm password fields match, the user's data is added to the "users" table in the SQLite database. Otherwise, an error message is displayed on both password fields. A "Registration completed" message is printed to the console, and the current screen view is changed to the "LoginScreen". Finally, the database connection is closed.
+
 ## Record of Tasks
 | task no | Planned action                                         | Planned outcome | Time estimate | Target completion | Criterion |
 |---------|--------------------------------------------------------|-----------------|---------------|-------------------|-----------|
@@ -301,3 +320,12 @@ Overall, this code is used to ensure that the user has written a reflection or n
 # Criteria D: Functionality
 
 A 7 min video demonstrating the proposed solution with narration
+
+## Citations
+
+https://www.sqlite.org/aff_short.html
+https://emeritus.org/blog/coding-what-is-pycharm/#:~:text=What%20is%20PyCharm%20Used%20For,by%20programmers%20using%20various%20APIs.
+https://stackoverflow.com/questions/73157765/kivymd-using-main-for-events-and-kv-file-for-layout
+https://stackoverflow.com/questions/67982460/how-do-i-get-the-average-age-or-grade-of-my-stored-list
+https://www.google.fr/search?q=fond+d%27%C3%A9cran+arbre+rouge+et+noir&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjkifK0q9H9AhW1mVYBHWh7CXQQ_AUoAXoECAEQAw&biw=1440&bih=789&dpr=2#imgrc=O6cdarYoBA-V6M&imgdii=Tfs8yAK9JlVU2M
+
