@@ -1,0 +1,237 @@
+ScreenManager:
+    id:scr_manager
+
+    LoginScreen:
+        name: "LoginScreen"
+
+    SignupScreen:
+        name: "SignupScreen"
+
+    IntroScreen:
+        name: "IntroScreen"
+
+
+
+<LoginScreen>:
+    size: 500, 500
+    FitImage:
+        source: "pizza.jpg"
+
+    MDCard:
+        size_hint: .5, .9
+        elevation: 2
+        orientation: "vertical"
+        pos_hint: {"center_x": .5, "center_y": .5}
+        padding: dp(50)
+        md_bg_color: "#EEE9DA"
+
+        MDLabel:
+            text: "Login"
+            font_size: 24
+            size_hint: 1, .2
+            halign: "center"
+            pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDTextField:
+            id: email_in
+            hint_text: "Enter your username or email"
+            icon_left: "email"
+
+        MDTextField:
+            id: passwd_in
+            hint_text: "Enter your password"
+            icon_left: "key"
+            password: True
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            MDRaisedButton:
+                id: login
+                text: "Login"
+                on_press: root.try_login()
+                size_hint: .3, .4
+                md_bg_color: "#BDCDD6"
+
+            MDLabel:
+                size_hint: .3, 1
+
+            MDRaisedButton:
+                id: signup
+                text: "Signup"
+                on_press: root.try_register()
+                size_hint: .3, .4
+                md_bg_color: "#93BFCF"
+                on_press: app.root.current = "Press the button 1"
+
+
+
+<SignupScreen>:
+    size: 500, 500
+    FitImage:
+        source: "pizza.jpg"
+
+    MDCard:
+        size_hint: .5, .9
+        elevation: 2
+        orientation: "vertical"
+        pos_hint: {"center_x": .5, "center_y": .5}
+        padding: dp(50)
+        md_bg_color: "#EEE9DA"
+
+        MDLabel:
+            text: "Signup"
+            font_size: 24
+            size_hint: 1, .2
+            halign: "center"
+            pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDTextField:
+            id: uname
+            hint_text: "Enter username"
+            icon_left: "account"
+
+        MDTextField:
+            id: email
+            hint_text: "Enter your email"
+            icon_left: "email"
+
+        MDTextField:
+            id: e_passwd
+            hint_text: "Enter password"
+            icon_left: "key"
+            password: True
+
+        MDTextField:
+            id: c_passwd
+            hint_text: "Confirm password"
+            icon_left: "key"
+            password: True
+            helper_text_mode: "on_error"
+            helper_text: "Passwords don't match"
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .1
+
+            MDRaisedButton:
+                id: signup_signup
+                text: "Cancel"
+                on_press: root.try_cancel()
+                size_hint: .3, .65
+                md_bg_color: "#93BFCF"
+
+            MDLabel:
+                size_hint: .3, 1
+
+            MDRaisedButton:
+                id: signup
+                text: "Submit"
+                size_hint: .3, .65
+                md_bg_color: "#BDCDD6"
+
+
+
+
+
+<IntroScreen>:
+    MDCard:
+        size_hint: .7, .7
+        pos_hint: {"center_x":.5, "center_y":.5}
+        md_bg_color: 0.4, 0.4, 0, 0.5
+        orientation: "vertical"
+
+
+        MDLabel:
+            text: "Pizza tutorial"
+            front_style: 'H5'
+            halign: "center"
+            size_hint: 1, .1
+
+        FitImage:
+            size_hint: 1, .7
+            radius: 36, 36, 0, 0
+            source: "pizza_intro.png"
+
+            MDRaisedButton:
+                id: signup_signup
+                text: "Cancel"
+                on_press: root.try_cancel()
+                size_hint: .3, .65
+                md_bg_color: "#93BFCF"
+
+            MDLabel:
+                size_hint: .3, 1
+
+            MDRaisedButton:
+                id: signup
+                text: "Submit"
+
+                on_press: app.root.current = "Press the button 1"
+                size_hint: .3, .65
+                md_bg_color: "#BDCDD6"
+
+
+
+<PrepareDough>:
+    MDCard:
+        size_hint: .7, .7
+        pos_hint: {"center_x":.5, "center_y":.5}
+        md_bg_color: "#FF0000"
+        orientation: "vertical"
+
+
+        MDLabel:
+            text: "Prepare Dough"
+            front_style: 'H5'
+            halign: "center"
+            size_hint: 1, .1
+            color: "#000000"
+
+        MDBoxLayout:
+            orientation: "vertical"
+            size_hint: 1, .7
+
+        FitImage:
+            size_hint: 1, .7
+            radius: 36, 36, 0, 0
+            source: "prepare_dough.png"
+
+        MDRaisedButton:
+            text: "Next Step"
+            on_press: root.parent.current = "PrepareDough"
+            pos_hint: {"center_x":.5}
+
+<Prepare ingredients>:
+    MDCard:
+        size_hint: .7, .7
+        pos_hint: {"center_x":.5, "center_y":.5}
+        md_bg_color: "#0000FF"
+        orientation: "vertical"
+
+
+        MDLabel:
+            text: "Prepare Dough"
+            front_style: 'H5'
+            halign: "center"
+            size_hint: 1, .1
+            color: "#000000"
+
+        MDBoxLayout:
+            orientation: "vertical"
+            size_hint: 1, .7
+
+        FitImage:
+            size_hint: 1, .7
+            radius: 36, 36, 0, 0
+            source: "prepare_ingredients.png"
+
+        MDRaisedButton:
+            text: "Next Step"
+            on_press: root.parent.current = "PrepareIngredients"
+            pos_hint: {"center_x":.5}
+
+
+
+
