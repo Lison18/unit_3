@@ -1,4 +1,5 @@
 # unit_3
+<img width="1440" alt="Screen Shot 2023-03-10 at 9 20 20 PM" src="https://user-images.githubusercontent.com/116609563/224541741-f7299adf-cc70-44d1-9db9-73550486ece6.png">
 
 ## Criteria A: Planning
 
