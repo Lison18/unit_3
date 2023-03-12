@@ -4,8 +4,8 @@
 
 ## Problem definition
 
-Verlon Taisei Sakaguchi studies in UWC Isak Japan and wants to be updated of his school progress. He is asking for an aplication which records his new IB grades. Indeed, his objectif is to get a perfect score to get into his dream university in the United States. To achive this goal, he has to improve his grades by focusing more on the subjects that he is struggling with. Moreover, Verlon wants to know how much he has to study for each subjects
-However, sometimes he is feeling very demotivated because of his school academic pressure and the lack of sleep. But he wants to always remember that every challenges that he is facing are at the end always going to make him stronger and that he has to move on by doing his best.
+Verlon Taisei Sakaguchi studies in UWC Isak Japan and wants to be updated of his school progress. He is asking for an aplication which records his new IB grades. Indeed, his objectif is to get a perfect score to get into his dream university which requests a score of 40 points out of 42 in the United States. To achive this goal, he has to know exaclty what his average is in order to pretend to this prestigious university.
+However, sometimes he is feeling very demotivated because of his school academic pressure and the lack of sleep. But he wants to always remember that every challenges that he is facing are at the end always going to make him stronger and that he has to move on by doing his best to reach his dream.
 
 ## Proposed Solution
 
@@ -319,7 +319,9 @@ Overall, this code is used to ensure that the user has written a reflection or n
 
 # Criteria D: Functionality
 
-A 7 min video demonstrating the proposed solution with narration
+A 7 min video demonstrating the proposed solution with narration: 
+
+
 
 ## Citations
 
