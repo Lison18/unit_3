@@ -1,0 +1,260 @@
+import sqlite3
+from kivymd.app import MDApp
+from kivymd.uix.datatables import MDDataTable
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.dialog import MDDialog
+import random
+
+
+class database_handler:
+    def __init__(self, namedb: str):
+        self.connection = sqlite3.connect(namedb)
+        self.cursor = self.connection.cursor()
+
+    def create_table_users(self):
+        query = f"""CREATE TABLE if not exists users(
+            id INTEGER PRIMARY KEY,
+            email text not NULL unique,
+            password text not NULL,
+            username text not NULL
+            )"""
+        self.run_query(query)
+
+    def create_table(self):
+        query = f"""CREATE TABLE if not exists grades(
+            id INTEGER PRIMARY KEY,
+            user_id INTEGER,
+            grade int,
+            subject text not NULL,
+            average int
+            )"""
+        self.run_query(query)
+
+
+    def run_query(self, query: str):
+        self.cursor.execute(query)
+        self.connection.commit()
+
+    def close(self):
+        self.connection.close()
+
+    def insert_user(self, email, password, username):
+        query = f"INSERT into users(email, password, username) VALUES ('{email}', '{password}', '{username}')"
+        self.run_query(query)
+
+    def search(self, query):
+        result = self.cursor.execute(query).fetchall()
+        return result
+
+
+class LoginScreen(MDScreen):
+
+    def try_login(self):
+        print("User tried to login")
+        # Get the input username and password and print it
+        email = self.ids.email_in.text
+        passwd = self.ids.passwd_in.text
+        query = f"SELECT * from users WHERE email='{email}' and password='{passwd}'"
+        db = database_handler("project3.db")
+        result = db.search(query=query)
+        print(result)
+        db.close()
+        if len(result) == 1:
+            print("Login successful")
+            self.parent.current = "MenuScreen"
+        else:
+            print("Login incorrect")
+
+    def try_register(self):
+        self.parent.current = "SignupScreen"
+        print("User trying registration")
+
+
+class SignupScreen(MDScreen):
+# method to go back to the login screen
+
+    def try_cancel(self):
+        self.parent.current = "LoginScreen"
+# method to create a new account
+    def try_register(self):
+        uname = self.ids.uname.text
+        email = self.ids.email.text
+        passwd = self.ids.e_passwd.text
+        passwd_check = self.ids.c_passwd.text
+
+        #condition to make sure that the user entered the right password
+        if passwd != passwd_check:
+            self.ids.e_passwd.error = True
+            self.ids.c_passwd.error = True
+        else:  # password match
+            db = database_handler("project3.db")
+            db.create_table_users()
+            db.insert_user(email, passwd, uname)
+            db.close()
+            print("Registration completed")
+            self.parent.current = "LoginScreen"
+
+class login(MDApp):
+    def build(self):
+        return
+
+class MenuScreen(MDScreen):
+
+    # method to go to Intro screen
+    def button1(self):
+        self.ids.go_IntroScreen.text()
+    # method to got to Table screen
+    def button2(self):
+        self.ids.go_TableScreen.text()
+
+class IntroScreen(MDScreen):
+
+    def Today_notes(self):
+        if not self.ids.notes.text():   # condition for the user to input his thoughts
+            print("Write your reflection!")
+        else:
+            # do something else here
+            self.parent.current = "MenuScreen"
+
+    def on_pre_enter(self, *args):
+
+        # list of quotes that change each time the user is opening the app
+        quotes = [
+            "Believe you can and you're halfway there. -Theodore Roosevelt",
+            "You are never too old to set another goal or to dream a new dream. -C.S. Lewis",
+            "Positive anything is better than negative nothing. -Elbert Hubbard",
+            "In the middle of every difficulty lies opportunity. -Albert Einstein",
+            "The best way to predict your future is to create it. -Abraham Lincoln",
+            "Be the change that you wish to see in the world. -Mahatma Gandhi",
+            "Success is not final, failure is not fatal: it is the courage to continue that counts. -Winston Churchill"
+
+        ]
+
+        rand_num = random.randint(0, 6)
+        self.ids.quote.text = quotes[rand_num]
+
+
+
+    def try_cancel(self):
+        self.parent.current = "MenuScreen"
+
+
+class database_worker:      # connection with the database_worker in order to register informations in a table
+    def __init__(self, name):
+        self.connection = sqlite3.connect(name)
+        self.cursor = self.connection.cursor()
+
+    def search(self, query):
+        result = self.cursor.execute(query).fetchall()
+        return result
+
+    def run_save(self, query):
+        self.cursor.execute(query)
+        self.connection.commit()
+
+    def close(self):
+        self.connection.close()
+
+
+class tablepage(MDApp):
+    def build(self):
+        pass
+
+
+class TableScreen(MDScreen):
+
+    def try_cancel(self):
+        self.parent.current = "MenuScreen"
+
+    # class variable
+    data_table = None
+
+# creation of the table
+    def on_pre_enter(self, *args):
+        # before the screen is created, this code runs
+        self.data_table = MDDataTable(
+            size_hint=(.8, .5),
+            pos_hint={"center_x": .5, "center_y": .5},
+            use_pagination=True,
+            check=True,
+            column_data=[
+                ("id",70),
+                ("subjects", 70),
+                ("grades", 50),
+
+            ]
+        )
+        self.data_table.bind(on_row_press=self.row_press),
+        self.data_table.bind(on_check_press=self.check_pressed),
+        self.add_widget(self.data_table)
+        self.update()
+
+    def row_press(self, table, row):
+        print("row was pressed", row.text)
+        row.md_bg_color = "#ff0000"
+
+    def check_pressed(self, table, current_row):
+        print("A check mark was pressed", current_row)
+
+# method to save the grades
+    def save(self):
+        print("trying to save new tx")
+        user_id = self.ids.user_id.text
+        subject = self.ids.subject.text
+        grade = self.ids.grade.text
+        delete = self.ids.delete.text
+        hash = ""
+        db = database_worker("project3.db")
+        query = f"insert into grades (user_id, subject,grade) values('{user_id}', '{subject}', '{grade}')"
+        db.run_save(query)
+        db.close()
+        print("query was saved")
+        self.update()
+# method to delete the grades
+    def delete_selected_row(self):
+        checked_rows = self.data_table.get_row_checks()
+        print(checked_rows)
+        db = database_worker("project3.db")
+        for row in checked_rows:
+            id = row[0]
+            query = f"delete from grades where id = {id}"
+            db.run_save(query)
+        db.close()  # move this statement inside the for loop
+        self.update()
+# method to add grades
+    def update(self):
+        db = database_handler("project3.db")
+        query = "select user_id, subject, grade from grades"
+        data = db.search(query)
+        db.close()
+        print(data)
+        self.data_table.update_row_data(None, data)
+
+# method to get the average of all the grades
+    def get_average(self):
+        db = database_handler("project3.db")
+        query_grades = "SELECT grade from grades"
+        result = db.search(query=query_grades)
+        grades = [row[0] for row in result]  # Extract grades from the query result
+        if grades:
+            grades = [int(grade) for grade in grades]  # Convert grades to floats
+            average_grade = sum(grades) / len(grades)
+            dialog = MDDialog(title="Grade average",
+                              text=f"Average grade: {average_grade:.2f}")
+            dialog.open()
+            print(f"Average grade: {average_grade:.2f}")
+        else:
+            print("No grades found in the database")
+        db.close()
+
+    # tablepage().run()
+
+db = database_handler(namedb="project3.db")
+db.create_table_users()
+db.create_table()
+db.close()
+test = login()
+test.run()
+
+
+
