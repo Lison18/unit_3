@@ -133,7 +133,7 @@ Figure 6- This code creates a method called try_register which registers a new u
 Test if signup page works	|	Functional: Integration testing	|	Press "Sign up", use "lis" for all text fields. Press "Submit".	|	Should bring to login screen
 Test if login and logout pages work	|	Functional: Integration testing	|	Enter "lison" for email and password. Press "Login". Press logout button	|	Should bring the user to Menuscreen, should bring the user to login screen
 Testing if adding and delete new grades works	|	Functional: Integration testing	|	Enter id, subject, grade. Press submit.	Then delete the row by pressing delete button|	Should see a nex row with the new grade and it should delete
-Check if the reflection of the day is saved	| functional: Integration testing |	The note should be saved and go back to the menu screen.
+Check if the reflection of the day is saved	| functional: Integration testing |	Write the note |  The note should be saved and go back to the menu screen.
 Check if the table is giving the average of all grades	| functional: Intergration testing|	Press average button in the grade table screen.	|	a white screen should pop up with the average written on it.
 
 
