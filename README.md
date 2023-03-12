@@ -320,10 +320,14 @@ Overall, this code is used to ensure that the user has written a reflection or n
 
 # Criteria D: Functionality
 
-A 7 min video demonstrating the proposed solution with narration: 
+##A 7 min video demonstrating the proposed solution with narration
 
 https://www.youtube.com/watch?v=UXBvzNz27bs
 
+## Complete code
+
+- Python file: https://github.com/Lison18/unit_3/blob/main/Python%20file
+- Kv file: 
 
 ## Citations
 
