@@ -321,7 +321,7 @@ Overall, this code is used to ensure that the user has written a reflection or n
 
 A 7 min video demonstrating the proposed solution with narration: 
 
-https://studio.youtube.com/video/UXBvzNz27bs/edit
+https://www.youtube.com/watch?v=UXBvzNz27bs
 
 
 ## Citations
