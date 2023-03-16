@@ -154,13 +154,13 @@ Check if the table is giving the average of all grades	| functional: Intergratio
 
 ## List of techniques used
 
-- Conditional statements, known as if-else statements, enable a program to make decisions based on certain conditions. When a condition is true, a specific block of code is executed, otherwise, another block of code is executed.
-- Loops allow for the repetition of a particular block of code multiple times. Various types of loops include for loops, while loops, and do-while loops.
-- Functions are reusable blocks of code that can be called multiple times from various parts of a program. Typically, functions take inputs, carry out operations on those inputs, and then return a result.
-- Variables are utilized as containers for storing data values in a program. They have the ability to hold a variety of data types, including numbers, strings, or boolean values.
-- Objects are complex data types that store data and methods related to a specific object or entity. In object-oriented programming, objects are commonly used.
-- Classes are templates used to create objects in object-oriented programming. They define the properties and behaviors of an object, and objects can be created from a class.
-- Inheritance is a feature of object-oriented programming that allows a class to inherit properties and behaviors from another class.
+- Conditional statements: known as if-else statements, enable a program to make decisions based on certain conditions. When a condition is true, a specific block of code is executed, otherwise, another block of code is executed.
+- Loops: allow for the repetition of a particular block of code multiple times. Various types of loops include for loops, while loops, and do-while loops.
+- Functions (methods): are reusable blocks of code that can be called multiple times from various parts of a program. Typically, functions take inputs, carry out operations on those inputs, and then return a result.
+- Variables:  are using as containers for storing data values in a program. They have the ability to hold a variety of data types, including numbers, strings, or boolean values.
+- Objects:  are complex data types that store data and methods related to a specific object or entity. In object-oriented programming, objects are commonly used.
+- Classes:  are templates used to create objects in object-oriented programming. They define the properties and behaviors of an object, and objects can be created from a class.
+- Inheritance:  is a feature of object-oriented programming that allows a class to inherit properties and behaviors from another class.
 
 
 ## Development
