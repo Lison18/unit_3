@@ -170,6 +170,7 @@ Check if the table is giving the average of all grades	| functional: Intergratio
 In order to make the customer account securized I implementate a login and sign up system.
 
 #### Login System
+```.py
 
     def try_login(self):
         print("User tried to login")
@@ -186,16 +187,16 @@ In order to make the customer account securized I implementate a login and sign 
             self.parent.current = "MenuScreen"
         else:
             print("Login incorrect")
-            
+      ```      
             
 The "try_login" method checks if the entered email and password exist in the "users" table of the "project3.db" database. It creates an SQL query, executes it, and prints the result. If the result has a length of 1, the user is navigated to the "MenuScreen". Otherwise, an error message is displayed.
-
+```.py
     def try_register(self):
         self.parent.current = "SignupScreen"
         print("User trying registration")
-        
+ ```       
 #### Sign up system
-
+```.py
     def try_register(self):
         uname = self.ids.uname.text
         email = self.ids.email.text
@@ -211,7 +212,7 @@ The "try_login" method checks if the entered email and password exist in the "us
             db.close()
             print("Registration completed")
             self.parent.current = "LoginScreen"
-            
+```            
             
 This code defines a method "try_register" for user registration that receives input data from four different text fields, namely "uname", "email", "e_passwd", and "c_passwd". If the entered passwords do not match, an error is displayed in both password fields. Otherwise, the method creates a new object of the "database_handler" class using the "project3.db" database and creates a new table named "users" in the database if it doesn't exist already. The user's information is then inserted into the "users" table using the "insert_user" method, and the database connection is closed. The method prints the message "Registration completed" and sets the current screen to the "LoginScreen".
 
@@ -219,7 +220,7 @@ This code defines a method "try_register" for user registration that receives in
 ### Success criteria 2:  The application has to allow the user to add and delate all his grades in IB
 
 #### adding grades
-
+```.PY
     def update(self):
         db = database_handler("project3.db")
         query = "select user_id, subject, grade from grades"
@@ -227,12 +228,12 @@ This code defines a method "try_register" for user registration that receives in
         db.close()
         print(data)
         self.data_table.update_row_data(None, data)
-        
+ ```       
         
 This code defines a method called "update" that updates data displayed on the screen. It creates a new object of the "database_handler" class and executes an SQL query to select user_id, subject, and grade columns from the "grades" table of the "project3.db" database. It stores the result in "data" and prints it. Then, it updates the data displayed on the screen using the "update_row_data" method of the "data_table" object with the new data.
 
 ### Delete grades
-
+```.py
     def delete_selected_row(self):
         checked_rows = self.data_table.get_row_checks()
         print(checked_rows)
@@ -243,12 +244,12 @@ This code defines a method called "update" that updates data displayed on the sc
             db.run_save(query)
         db.close()  # move this statement inside the for loop
         self.update()
-        
+   ```     
 This code deletes selected rows from a table displayed on the screen. It gets the list of checked rows, creates a new object of the "database_worker" class, iterates over the checked rows, retrieves the "id" of each row, constructs an SQL query to delete the corresponding row from the "grades" table, and executes the query. Finally, it updates the table displayed on the screen by calling the "update" method.
 
 
 ### Success criteria 3:  The application has to provide a function which calculates the average score of the client 
-
+```.py
     def get_average(self):
         db = database_handler("project3.db")
         query_grades = "SELECT grade from grades"
@@ -264,7 +265,7 @@ This code deletes selected rows from a table displayed on the screen. It gets th
         else:
             print("No grades found in the database")
         db.close()
-        
+ ```      
 This code defines a method called "get_average" that calculates the average of all grades stored in the "grades" table of the "project3.db" database.
 The method creates a new object of the "database_handler" class and executes an SQL query to retrieve all grades from the "grades" table. The grades are extracted from the query result and stored in the "grades" variable.
 If there are any grades in the "grades" variable, the method converts the grades to integers, calculates the average grade, and displays the result in a dialog box using the "MDDialog" class. The average grade is also printed to the console.
@@ -272,15 +273,15 @@ If there are no grades in the "grades" variable, the method prints a message to 
 Finally, the method closes the database connection.
 
 ### Success criteria 4:  The application has log out
-
+```.py
     def try_log_out(self):
         self.parent.current = "MenuScreen"
-        
+ ```       
 This code defines a method called "try_log_out" that is used to log out the user by changing the current screen to the "MenuScreen".
 The method simply sets the value of the "current" attribute of the "parent" object (which refers to the parent widget of the current screen) to "MenuScreen". This causes the screen to be changed to the "MenuScreen".
 
 ### Success criteria 5: The application has to show a motivating quote each time the customer signs up 
-
+```.py
     def on_pre_enter(self, *args):
 
         quotes = [
@@ -296,7 +297,7 @@ The method simply sets the value of the "current" attribute of the "parent" obje
 
         rand_num = random.randint(0, 6)
         self.ids.quote.text = quotes[rand_num]
-        
+```        
 
 This code defines a method called "on_pre_enter" that is called before the screen associated with this class is entered.
 The method first creates a list of quotes and stores it in the "quotes" variable.
@@ -304,15 +305,14 @@ Then, a random number is generated using the "randint" method of the "random" mo
 
 
 ### Success criteria 6: The application has to provide a space for the client to write his positive note of the day
-
+```.py
     def Today_notes(self):
         if not self.ids.notes.text():
             print("Write your reflection!")
         else:
             # do something else here
             self.parent.current = "MenuScreen"
-            
-            
+ ```                       
 This code defines a method called "Today_notes" that is used to check if the user has written a reflection or note for the day.
 First, the code checks if the "notes" field is empty or not by calling the "text" method on the "notes" widget using the "ids" attribute. If the "notes" field is empty, the method prints the message "Write your reflection!" to the console.
 If the "notes" field is not empty, the method sets the current screen to "MenuScreen" by calling the "current" attribute on the "parent" widget using the "ids" attribute.
