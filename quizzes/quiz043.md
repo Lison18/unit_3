@@ -21,3 +21,4 @@ INSERT INTO Movies (name, producer, director, category, budget, year) VALUES ('M
 
 
 <img width="1011" alt="Screen Shot 2023-03-18 at 11 05 56 PM" src="https://user-images.githubusercontent.com/116609563/226111190-0b5a4b03-c4cd-442c-aa43-b2227ed00cd2.png">
+ 
