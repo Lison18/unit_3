@@ -95,7 +95,8 @@ Figure 5- The LoginScreen class utilizes the try_login method to verify the user
 Figure 5- This diagram represents the code which calculates the average grade of students stored in a SQLite database called "project3.db". It retrieves all grades from the "grades" table using an SQL query, and then calculates the average grade by adding up all grades and dividing by the total number of grades. The result is displayed in a dialog box using the MDDialog class from the KivyMD library and is also printed to the console. If no grades are found in the database, a message is printed to the console. 
 
 ### Flow diagram for try_register in SignupScreen:
-<img width="353" alt="Screen Shot 2023-03-10 at 9 04 43 PM" src="https://user-images.githubusercontent.com/116609563/224311894-f4f0ad5a-0672-4f8d-9547-c5550399701b.png">
+
+<img width="303" alt="Screen Shot 2023-03-29 at 8 54 24 PM" src="https://user-images.githubusercontent.com/116609563/228528052-530282fd-cd06-4b0c-a10d-34c1d82890be.png">
 
 Figure 6- This code creates a method called try_register which registers a new user into the application by retrieving input from the username, email, password, and confirm password fields. If the password and confirm password fields match, the user's data is added to the "users" table in the SQLite database. Otherwise, an error message is displayed on both password fields. A "Registration completed" message is printed to the console, and the current screen view is changed to the "LoginScreen". Finally, the database connection is closed.
 
