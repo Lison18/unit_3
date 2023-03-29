@@ -81,13 +81,16 @@ Figure 4- Represents all the screens that are in the application inculding the l
 
 ### Flow diagram for try_login method in class LoginScreen:
 
-<img width="299" alt="Screen Shot 2023-03-10 at 8 25 10 PM" src="https://user-images.githubusercontent.com/116609563/224304511-66dde73c-c1ed-4832-97b6-de291656955f.png">
+
+
+<img width="202" alt="Screen Shot 2023-03-10 at 5 18 39 PM" src="https://user-images.githubusercontent.com/116609563/224304535-30216efb-9cad-495c-aa03-06b3b64a8ede.png">
 
 Figure 5- The LoginScreen class utilizes the try_login method to verify the user's login details. Upon receiving the user's email and password, the method retrieves the hashed password from the "users" table in the database through the use of the get_password_from_email() function from the database_handler_login_signup class. The try_login method plays a pivotal role in the LoginScreen class as it guarantees that only legitimate users are able to access the application's functionalities.
 
 ### Flow diagram for get_average method in class TableScreen:
 
-<img width="202" alt="Screen Shot 2023-03-10 at 5 18 39 PM" src="https://user-images.githubusercontent.com/116609563/224304535-30216efb-9cad-495c-aa03-06b3b64a8ede.png">
+
+<img width="299" alt="Screen Shot 2023-03-10 at 8 25 10 PM" src="https://user-images.githubusercontent.com/116609563/224304511-66dde73c-c1ed-4832-97b6-de291656955f.png">
 
 Figure 5- This diagram represents the code which calculates the average grade of students stored in a SQLite database called "project3.db". It retrieves all grades from the "grades" table using an SQL query, and then calculates the average grade by adding up all grades and dividing by the total number of grades. The result is displayed in a dialog box using the MDDialog class from the KivyMD library and is also printed to the console. If no grades are found in the database, a message is printed to the console. 
 
