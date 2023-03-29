@@ -5,25 +5,24 @@
 
 ## Problem definition
 
-Verlon Taisei Sakaguchi studies in UWC Isak Japan and wants to be updated of his school progress. He is asking for an aplication which records his new IB grades. Indeed, his objectif is to get a perfect score to get into his dream university which requests a score of 40 points out of 42 in the United States. To achive this goal, he has to know exaclty what his average is in order to pretend to this prestigious university.
-However, sometimes he is feeling very demotivated because of his school academic pressure and the lack of sleep. But he wants to always remember that every challenges that he is facing are at the end always going to make him stronger and that he has to move on by doing his best to reach his dream.
+Verlon Taisei Sakaguchi studies in UWC Isak Japan and wants to be updated of his school progress. He is asking for an aplication which records his new IB grades. Indeed, his objectif is to get a perfect score to get into his dream university which requests a score of 40 points out of 42 in the United States. To achive this goal, he has to know exaclty what his average is in order to pretend to this prestigious university. He has been calculating his score manually with a calculator which took him a lot of time and he wasn't able to constantly see his progress.
+Furthermore, sometimes he is feeling very demotivated because of the school academic pressure and the lack of sleep. So he wants to always remember the "why" he is making all this efforts.
 
-## Proposed Solution
+## Rationale Proposed Solution
 
 ### Design Statement
 
-To address the client's requirements, a customized application can be developed utilizing the Python programming language and the Kivy MD library for user interface design. Python was selected due to the facility of use, extensive community support, and rich library collection, as well as its cross-platform compatibility. Kivy MD was chosen for its material design aesthetic, which enhances usability and intuitiveness for employees.
+To address the client's requirements, a customized application can be developed using 
+the software tool Python as a free platforme-independant. It may be adequate to utilize a GUI (Graphical User Interface) to the program. In order for the client to be able to store its data the use of SQLite could be a good software as it is a largely used darabase. In addition, this makes it a good option for the proposed solution as the application will be displaying, storing and deleting and adding data regarding the grades of the client. By using KivyMD I will be able to code a graphical user interface with several pages. KivyMd is very easy to use and able the customer to see nice visuals and to get the options that he required.
 
-Regarding rental transaction data, SQL is an ideal choice for its robust and adaptable database management capabilities. Its ability to handle large amounts of data, safeguard it with security features, and accommodate concurrent users makes it well-suited for this application. SQL is truly impressive in its capabilities. By leveraging SQL to store grades information, client can input the grades and view averages.
 
 ### Justificaltion of the tools
 Python is a multifunction and popular programming language with a lot of advantages:
 
 - Easy to learn : Python is considered to be one of the easiest programming languages to learn, meaning that we can incorporate diverse functionalities .
 - Large Community and Library Support: Python has a vast community of developers who create and share libraries, frameworks, and tools, making it easier to develop applications quickly and efficiently. 
-- Versatile: Python can be used for various tasks such as, data analysis, machine learning, automation and  web development in this case.
-- Readability: Python's clean syntax and readability make it easier to understand and maintain code.
-- Dynamically Typed: Python is dynamically typed, which means you don't need to specify the data type of a variable when declaring it. This feature reduces the amount of code required to write, making it easier to understand and maintain.
+- Can be used for various tasks such as, data analysis, machine learning, web development in this case.
+- Fixes programing errors: Python's clean syntax and readability make it easier to understand and maintain code.
 - Open source: Python is free and open-source, meaning that anyone can download and use it for free, making it an accessible programming language for everyone.
 
 The advantages of using KivyMD include:
