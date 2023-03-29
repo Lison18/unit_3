@@ -89,8 +89,8 @@ Figure 5- The LoginScreen class utilizes the try_login method to verify the user
 
 ### Flow diagram for get_average method in class TableScreen:
 
+<img width="353" alt="Screen Shot 2023-03-29 at 8 01 55 PM" src="https://user-images.githubusercontent.com/116609563/228514052-869f0127-c78b-4005-9a92-b6a240525afc.png">
 
-<img width="299" alt="Screen Shot 2023-03-10 at 8 25 10 PM" src="https://user-images.githubusercontent.com/116609563/224304511-66dde73c-c1ed-4832-97b6-de291656955f.png">
 
 Figure 5- This diagram represents the code which calculates the average grade of students stored in a SQLite database called "project3.db". It retrieves all grades from the "grades" table using an SQL query, and then calculates the average grade by adding up all grades and dividing by the total number of grades. The result is displayed in a dialog box using the MDDialog class from the KivyMD library and is also printed to the console. If no grades are found in the database, a message is printed to the console. 
 
