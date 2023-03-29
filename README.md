@@ -184,11 +184,12 @@ In order to make the customer account securized I implementate a login and sign 
             self.parent.current = "MenuScreen"
         else:
             print("Login incorrect")
-      ```      
+```
             
 The "try_login" method checks if the entered email and password exist in the "users" table of the "project3.db" database. It creates an SQL query, executes it, and prints the result. If the result has a length of 1, the user is directed to the "MenuScreen". Otherwise, an error message is displayed.
      
 #### Sign up system
+
 ```.py
     def try_register(self):
         uname = self.ids.uname.text
@@ -208,6 +209,16 @@ The "try_login" method checks if the entered email and password exist in the "us
 ```            
             
 This code defines a method "try_register" for user registration that receives input data from four different text fields: "uname", "email", "e_passwd", and "c_passwd". If the entered passwords do not match, an error is displayed in both password fields. Otherwise, the method creates a new object of the "database_handler" class using the "project3.db" database and creates a new table named "users" in the database if it doesn't exist already. The user's information is then inserted into the "users" table using the "insert_user" method, and the database connection is closed. The method prints the message "Registration completed" and sets the current screen to the "LoginScreen".
+
+#### MDtextField 
+```.kv
+
+        MDTextField:
+            id: email_in
+            hint_text: "Enter your username or email"
+            icon_left: "email"
+```
+This code belonging to the kv file of the project is an exemple of how to create a text boxe on a screen where the user can input his username and email.
 
 
 ### Success criteria 2:  The application has to allow the user to add and delate all his grades in IB
@@ -240,6 +251,15 @@ This code is a method called "update" that updates data displayed on the screen.
    ```     
 This method deletes selected rows from a table displayed on the screen. It gets the list of checked rows, creates a new object of the "database_worker" class, iterates over the checked rows, retrieves the "id" of each row, constructs an SQL query to delete the corresponding row from the "grades" table, and executes the query. Finally, it updates the table displayed on the screen by calling the "update" method.
 
+#### MDRaiseButton
+```.py
+        MDRaisedButton:
+            id: delete
+            text: "delete grade"
+            on_press:
+                root.delete_selected_row()
+```
+This code from the kv file of the project is an exemple of how to create the button which allow the user to delate his grades by row.
 
 ### Success criteria 3:  The application has to provide a function which calculates the average score of the client 
 ```.py
