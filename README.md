@@ -252,7 +252,7 @@ This code is a method called "update" that updates data displayed on the screen.
 This method deletes selected rows from a table displayed on the screen. It gets the list of checked rows, creates a new object of the "database_worker" class, iterates over the checked rows, retrieves the "id" of each row, constructs an SQL query to delete the corresponding row from the "grades" table, and executes the query. Finally, it updates the table displayed on the screen by calling the "update" method.
 
 #### MDRaiseButton
-```.py
+```.kv
         MDRaisedButton:
             id: delete
             text: "delete grade"
@@ -292,6 +292,24 @@ Finally, the method closes the database connection.
  ```       
 This simple code is a method called "try_log_out" that is used to log out the user by changing the current screen to the "MenuScreen".
 The method simply sets the value of the "current" attribute of the "parent" object (which refers to the parent widget of the current screen) to "MenuScreen". This causes the screen to be changed to the "MenuScreen".
+
+#### MDCard
+
+```.kv
+    size: 500, 500
+    FitImage:
+        source: "image2.jpeg"
+
+    MDCard:
+        size_hint: .5, .9
+        elevation: 2
+        orientation: "vertical"
+        pos_hint: {"center_x": .5, "center_y": .5}
+        padding: dp(50)
+        md_bg_color: "#DCDCDC"
+```
+
+This code from the kv file of the project is creating the log out screen for the client called "MDCard". It is basically the primary screen for every pages on wihich we can personify with different colors, size, writing style, and even add image: "image2.jpeg" by downloading it.
 
 ### Success criteria 5: The application has to show a motivating quote each time the customer signs up 
 ```.py
