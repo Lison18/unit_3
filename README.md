@@ -144,29 +144,23 @@ Check if the table is giving the average of all grades	| functional: Intergratio
 # Criteria C: Development
 
 ## Existing tools
-| Software/Development tools | Coding Structure Tools        | Libraries       |
-|----------------------------|-------------------------------|-----------------|
-| PyCharm[^25]               | OOP Structures (classes)      | Kivymd.app[^28] |
-| Python[^1]                 | SQL requests                  | sqlite3[^29]    |
-| SQLite[^5]                 | Databases                     | passlib[^30]    |
-| KivyMD[^4]                 | Encryption                    | re[^31]         |
-| Github Copilot[^26]        | For loops                     | email_validator[^32] |
-| CodeGPT[^27]               | If-else statements            |                 |
-|                            | ORM (Object Relation Mapping) |                 |
+- Pycharm
+- Python
+- SGLite Database
+- ChatGPT
+- RGB colors
+
+## Techniques used
+
+- For loops
+- Variables
+- Database interaction
+- Functions
+- Methods
+- Object Oriented Programming (OOP) -> Inheritance, Classes
 
 
-## List of techniques used
-
-- Conditional statements: known as if-else statements, enable a program to make decisions based on certain conditions. When a condition is true, a specific block of code is executed, otherwise, another block of code is executed.
-- Loops: allow for the repetition of a particular block of code multiple times. Various types of loops include for loops, while loops, and do-while loops.
-- Functions (methods): are reusable blocks of code that can be called multiple times from various parts of a program. Typically, functions take inputs, carry out operations on those inputs, and then return a result.
-- Variables:  are using as containers for storing data values in a program. They have the ability to hold a variety of data types, including numbers, strings, or boolean values.
-- Objects:  are complex data types that store data and methods related to a specific object or entity. In object-oriented programming, objects are commonly used.
-- Classes:  are templates used to create objects in object-oriented programming. They define the properties and behaviors of an object, and objects can be created from a class.
-- Inheritance:  is a feature of object-oriented programming that allows a class to inherit properties and behaviors from another class.
-
-
-## Development
+## Computational Thinking
 
 ###Success criteria 1: The application has to provide a login system demanding the username and password in order to login and sign up
 
@@ -192,7 +186,7 @@ In order to make the customer account securized I implementate a login and sign 
             print("Login incorrect")
       ```      
             
-The "try_login" method checks if the entered email and password exist in the "users" table of the "project3.db" database. It creates an SQL query, executes it, and prints the result. If the result has a length of 1, the user is navigated to the "MenuScreen". Otherwise, an error message is displayed.
+The "try_login" method checks if the entered email and password exist in the "users" table of the "project3.db" database. It creates an SQL query, executes it, and prints the result. If the result has a length of 1, the user is directed to the "MenuScreen". Otherwise, an error message is displayed.
 ```.py
     def try_register(self):
         self.parent.current = "SignupScreen"
@@ -217,7 +211,7 @@ The "try_login" method checks if the entered email and password exist in the "us
             self.parent.current = "LoginScreen"
 ```            
             
-This code defines a method "try_register" for user registration that receives input data from four different text fields, namely "uname", "email", "e_passwd", and "c_passwd". If the entered passwords do not match, an error is displayed in both password fields. Otherwise, the method creates a new object of the "database_handler" class using the "project3.db" database and creates a new table named "users" in the database if it doesn't exist already. The user's information is then inserted into the "users" table using the "insert_user" method, and the database connection is closed. The method prints the message "Registration completed" and sets the current screen to the "LoginScreen".
+This code defines a method "try_register" for user registration that receives input data from four different text fields: "uname", "email", "e_passwd", and "c_passwd". If the entered passwords do not match, an error is displayed in both password fields. Otherwise, the method creates a new object of the "database_handler" class using the "project3.db" database and creates a new table named "users" in the database if it doesn't exist already. The user's information is then inserted into the "users" table using the "insert_user" method, and the database connection is closed. The method prints the message "Registration completed" and sets the current screen to the "LoginScreen".
 
 
 ### Success criteria 2:  The application has to allow the user to add and delate all his grades in IB
@@ -233,7 +227,7 @@ This code defines a method "try_register" for user registration that receives in
         self.data_table.update_row_data(None, data)
  ```       
         
-This code defines a method called "update" that updates data displayed on the screen. It creates a new object of the "database_handler" class and executes an SQL query to select user_id, subject, and grade columns from the "grades" table of the "project3.db" database. It stores the result in "data" and prints it. Then, it updates the data displayed on the screen using the "update_row_data" method of the "data_table" object with the new data.
+This code is a method called "update" that updates data displayed on the screen. Then, it creates a new object of the "database_handler" class and executes an SQL query to select user_id, subject, and grade columns from the "grades" table of the "project3.db" database. It stores the result in "data" and prints it. Then, it updates the data displayed on the screen using the "update_row_data" method of the "data_table" object with the new data.
 
 ### Delete grades
 ```.py
@@ -248,7 +242,7 @@ This code defines a method called "update" that updates data displayed on the sc
         db.close()  # move this statement inside the for loop
         self.update()
    ```     
-This code deletes selected rows from a table displayed on the screen. It gets the list of checked rows, creates a new object of the "database_worker" class, iterates over the checked rows, retrieves the "id" of each row, constructs an SQL query to delete the corresponding row from the "grades" table, and executes the query. Finally, it updates the table displayed on the screen by calling the "update" method.
+This method deletes selected rows from a table displayed on the screen. It gets the list of checked rows, creates a new object of the "database_worker" class, iterates over the checked rows, retrieves the "id" of each row, constructs an SQL query to delete the corresponding row from the "grades" table, and executes the query. Finally, it updates the table displayed on the screen by calling the "update" method.
 
 
 ### Success criteria 3:  The application has to provide a function which calculates the average score of the client 
@@ -270,7 +264,7 @@ This code deletes selected rows from a table displayed on the screen. It gets th
         db.close()
  ```      
 This code defines a method called "get_average" that calculates the average of all grades stored in the "grades" table of the "project3.db" database.
-The method creates a new object of the "database_handler" class and executes an SQL query to retrieve all grades from the "grades" table. The grades are extracted from the query result and stored in the "grades" variable.
+Creates furthermore a new object of the "database_handler" class and executes an SQL query to retrieve all grades from the "grades" table. The grades are extracted from the query result and stored in the "grades" variable.
 If there are any grades in the "grades" variable, the method converts the grades to integers, calculates the average grade, and displays the result in a dialog box using the "MDDialog" class. The average grade is also printed to the console.
 If there are no grades in the "grades" variable, the method prints a message to the console indicating that no grades were found in the database.
 Finally, the method closes the database connection.
@@ -280,7 +274,7 @@ Finally, the method closes the database connection.
     def try_log_out(self):
         self.parent.current = "MenuScreen"
  ```       
-This code defines a method called "try_log_out" that is used to log out the user by changing the current screen to the "MenuScreen".
+This simple code is a method called "try_log_out" that is used to log out the user by changing the current screen to the "MenuScreen".
 The method simply sets the value of the "current" attribute of the "parent" object (which refers to the parent widget of the current screen) to "MenuScreen". This causes the screen to be changed to the "MenuScreen".
 
 ### Success criteria 5: The application has to show a motivating quote each time the customer signs up 
