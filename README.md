@@ -73,7 +73,7 @@ Furthermore, the database_worker class present in the diagram provides methods t
 
 ## Wireframe diagram
 
-<img width="537" alt="Screen Shot 2023-03-10 at 11 22 28 AM" src="https://user-images.githubusercontent.com/116609563/224207300-42ee748c-de8e-45f3-9bd2-eb843c3e4d9c.png">
+<img width="681" alt="Screen Shot 2023-03-29 at 9 48 20 PM" src="https://user-images.githubusercontent.com/116609563/228540349-597126c3-89a1-48a4-b05d-4b7de25d61e0.png">
 
 Figure 4- Represents all the screens that are in the application inculding the login screen, the signup screen, the menu, the today's quote screen (the quote is saved, and the grade table where you can get the average. It is showing how the screens are organized and what buttons are clicked on to make a certain screen appears thanks to the arrows. 
 
