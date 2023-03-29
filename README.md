@@ -187,11 +187,7 @@ In order to make the customer account securized I implementate a login and sign 
       ```      
             
 The "try_login" method checks if the entered email and password exist in the "users" table of the "project3.db" database. It creates an SQL query, executes it, and prints the result. If the result has a length of 1, the user is directed to the "MenuScreen". Otherwise, an error message is displayed.
-```.py
-    def try_register(self):
-        self.parent.current = "SignupScreen"
-        print("User trying registration")
- ```       
+     
 #### Sign up system
 ```.py
     def try_register(self):
