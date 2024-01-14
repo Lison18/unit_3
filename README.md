@@ -5,49 +5,40 @@
 
 ## Problem definition
 
-Verlon Taisei Sakaguchi studies in UWC Isak Japan and wants to be updated of his school progress. He is asking for an aplication which records his new IB grades. Indeed, his objectif is to get a perfect score to get into his dream university which requests a score of 40 points out of 42 in the United States. To achive this goal, he has to know exaclty what his average is in order to pretend to this prestigious university. He has been calculating his score manually with a calculator which took him a lot of time and he wasn't able to constantly see his progress.
-Furthermore, sometimes he is feeling very demotivated because of the school academic pressure and the lack of sleep. So he wants to always remember the "why" he is making all this efforts.
+My client is an IB student and would like to be kept informed of his recent academic progress. With a severe physical disability, he takes his courses at home on his computer. His goal is to get a perfect score to get into his dream university, Georgetown University, which requires a score of 43 out of 45 points in the USA. To do this, he needs to know exactly what his grade point average will be to gain admission to this prestigious university. But every time a new grade is added to his ManageBac account, he has to manually calculate his score using a calculator, which takes up a lot of his time and doesn't allow him to see the subjects he needs to improve. 
+What's more, he sometimes feels demotivated by the stress of classes and lack of sleep, knowing that he has no one to talk to to support him in his efforts.
 
 ## Rationale Proposed Solution
 
+To meet the client's requirements, I propose the development of a tailored application utilizing Python as a cost-free, platform-independent programming language. Employing a Graphical User Interface (GUI) may prove beneficial for the program's usability. To facilitate data storage for the client, the adoption of SQLite is suggested, given its extensive usage as a reliable database. This choice aligns well with the intended functionality of the application, which involves displaying, storing, deleting, and adding data pertaining to the client's grades. The use of KivyMD will enable the coding of a GUI featuring multiple pages. KivyMD's user-friendly nature ensures ease of development, offering visually appealing displays and providing the necessary options as per the client's requirements.
+
 ### Design Statement
 
-To address the client's requirements, a customized application can be developed using 
-the software tool Python as a free platforme-independant. It may be adequate to utilize a GUI (Graphical User Interface) to the program. In order for the client to be able to store its data the use of SQLite could be a good software as it is a largely used darabase. In addition, this makes it a good option for the proposed solution as the application will be displaying, storing and deleting and adding data regarding the grades of the client. By using KivyMD I will be able to code a graphical user interface with several pages. KivyMd is very easy to use and able the customer to see nice visuals and to get the options that he required.
-
-
-### Justificaltion of the tools
-Python is a multifunction and popular programming language with a lot of advantages:
-
-- Easy to learn : Python is considered to be one of the easiest programming languages to learn, meaning that we can incorporate diverse functionalities .
-- Large Community and Library Support: Python has a vast community of developers who create and share libraries, frameworks, and tools, making it easier to develop applications quickly and efficiently. 
-- Can be used for various tasks such as, data analysis, machine learning, web development in this case.
-- Fixes programing errors: Python's clean syntax and readability make it easier to understand and maintain code.
-- Open source: Python is free and open-source, meaning that anyone can download and use it for free, making it an accessible programming language for everyone.
-
-The advantages of using KivyMD include:
-- Material design look: KivyMD provides a material design look for the user interface, which is intuitive and easy to use for user.
-- Crossed platform: KivyMD works on multiple platforms, including Windows, Linux, macOS, Android, and iOS, which makes it easy to develop cross-platform applications.
-- Easy to Use: KivyMD is easy to use and implement, making it a great option for developers who want to create attractive and functional user interfaces quickly.
-- Customizable: KivyMD provides a wide range of customization options, including colors, themes, and styles, allowing developers to create unique and personalized user interfaces.
-- Large community and support: KivyMD has a large and active community of developers who create and share libraries and resources, making it easier to develop applications quickly and efficiently.
-
-Some of the advantages of using SQL include:
-- Efficient data storage: SQL provides an efficient way to retrieve data from a database, allowing users to quickly access the data they need without having to sift through large amounts of irrelevant data.
-- Data security: SQL provides a high level of security for databases by allowing administrators to restrict access to specific users and control what data they can access.
-- Scalability: SQL databases can handle large amounts of data and can be easily scaled up or down to accommodate changing needs.
-- Standardization: SQL is a standardized language, meaning that it is widely recognized and used across different platforms and systems.
-- Flexibility: SQL can be used to perform a wide range of functions, from simple data retrieval to complex data analysis.
-
-## Success Criteria
-
+I will design an application using python and KivyMD wich will use a SQLite database to store data for the user of the application. The application will allow my client to record his grades in different subjects and get his average IB score while staying motivated. It will take approximately 2 months to complete. The application will be evaluated according to the following criterias:
 
 1. The application has to provide a login system demanding the username and password in order to login and sign up
 2. The application has to allow the user to add an delate all his grades in IB
 3. The application has to provide a function which calculates the average score of the client 
-4. The application has log out
-5. The application has to show a motivating quote each time the customer signs up 
-6. The application has to provide a space for the client to write his positive note of the day
+4. The application has to show a motivating quote each time the customer signs up 
+5. The application has to provide a space for the client to write his positive note of the day
+
+
+### Justificaltion of the tools
+
+Python and KivyMD have a lot of advantages for the creation of the client's application:
+
+- Reability: Python's clean syntax and readability make it easier to understand and maintain code.
+- Open Source: Python is free, making it an accessible programming language the client.
+- Material design look: KivyMD provides a material design look for the user interface, which is intuitive and easy to use for the client
+- Crossed platform: KivyMD works on multiple platforms, including Windows, Linux, macOS, Android and iOS wich makes it easy to develop cross-platform applications.
+
+Some of the advantages of using SQL include:
+
+- Efficient data storage: SQL provides an efficient way to retrieve data from a database, allowing the client to quickly access the data of his grades without having to sift through large amounts of irrelevant data.
+- Data security: SQL provides a high level of security for databases by allowing the client to restrict access to specific users and control what data they can access.
+- Scalability: SQL databases can handle large amounts of data and can be easily scaled up or down to accommodate changing needs.
+- Flexibility: SQL can be used to perform a wide range of functions, from simple data retrieval to complex data analysis.
+
 
 # Criteria B: Design
 
@@ -63,6 +54,13 @@ Figure 1- Represents the system diagram for the application. The development of 
 Figure 2- Represents the ER diagram for the database to store the data for the application. The database for the project has two tables, one for "user" and an other for "grade". The first one on the left side consists of being able to log in and sign up with the costumer ID: username, password and email. 
 
 The second one on the right side is for the customer to be able to store his grades and subjects asigned to the ID
+
+### Example of data Entries
+
+<img width="481" alt="Screen Shot 2024-01-14 at 8 53 18 AM" src="https://github.com/Lison18/unit_3/assets/116609563/7655e4ae-a1a0-4627-8434-833826e6a6e1">
+
+Fig 3. Example of data entry in the users table
+
 
 ## UML Diagram
 <img width="595" alt="Screen Shot 2023-03-10 at 9 46 05 AM" src="https://user-images.githubusercontent.com/116609563/224194991-98eb7bf7-3098-4bdb-b6b2-0c39f753c17a.png">
@@ -129,6 +127,7 @@ Figure 6- This code creates a method called try_register which registers a new u
 | 22      | draw the first flow diagram to login                   | mar8            | 20min         | mar8              | B         |
 | 23      | comment the most important parts of the code on github | mar9            | 1h            | mar10             | B         |
 | 24      | uploade the most importante piece of code on github    | mar 10          | 20min         | mar10             | C         |
+
 
 ## Test Plan
 | Description | Type | Inputs | Outputs | 
