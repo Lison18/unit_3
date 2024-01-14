@@ -5,7 +5,6 @@ from kivymd.uix.screen import MDScreen
 from kivymd.uix.dialog import MDDialog
 import random
 
-
 class database_handler:
     def __init__(self, namedb: str):
         self.connection = sqlite3.connect(namedb)
