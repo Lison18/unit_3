@@ -367,3 +367,23 @@ https://stackoverflow.com/questions/73157765/kivymd-using-main-for-events-and-kv
 https://stackoverflow.com/questions/67982460/how-do-i-get-the-average-age-or-grade-of-my-stored-list
 https://www.google.fr/search?q=fond+d%27%C3%A9cran+arbre+rouge+et+noir&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjkifK0q9H9AhW1mVYBHWh7CXQQ_AUoAXoECAEQAw&biw=1440&bih=789&dpr=2#imgrc=O6cdarYoBA-V6M&imgdii=Tfs8yAK9JlVU2M
 
+# Criteria E: Evaluation
+
+## Client success criteria
+
+1. The application has to provide a login system demanding the username and password in order to login and sign up: Achieved 
+2. The application has to allow the user to add an delate all his grades in IB: Achieved
+3. The application has to provide a function which calculates the average score of the client: Achieved 
+4. The application has to show a motivating quote each time the customer signs up: Achieved 
+5. The application has to provide a space for the client to write his positive note of the day: Achieved
+
+## Feedback from client
+
+<img width="872" alt="Screen Shot 2024-01-14 at 11 44 56 AM" src="https://github.com/Lison18/unit_3/assets/116609563/41b34609-979a-47d2-9cdb-26ecb4be2e81">
+
+## Areas of improvement
+
+- From the client feedback, I understand that I should have anticipated its wish to save all the data he will write on this app inside the database espacially the motivation quotes and the today's quote.
+- I should have also asked my client about the design he wishes me to develop before coding the application and taking it in account for my future orders.
+
+
